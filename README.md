@@ -1,3 +1,5 @@
+これはCoyote009のraspiviceocapをforkしたものです。
+
 # raspivideocap
 C++ Camera capture library for raspberry pi camera v2
 
