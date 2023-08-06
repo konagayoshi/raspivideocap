@@ -3,10 +3,12 @@ set( INSTALL_DIR /opt/raspivideocap )
 
 cmake_minimum_required( VERSION 2.8 )
 
-find_package( OpenCV 3 REQUIRED )
+project(ProjectName)
 
-include_directories( src /opt/vc/include )
-link_directories( /opt/vc/lib )
+find_package( OpenCV 4 REQUIRED )
+
+include_directories( src /opt/vc/include /usr/local/include )
+link_directories( /opt/vc/lib /usr/local/lib )
 
 file( GLOB SRCS src/*.cpp src/*.c )
 

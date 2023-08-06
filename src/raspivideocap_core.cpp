@@ -351,9 +351,9 @@ double raspi_video_capture::get( int property_id )
     
     switch( property_id )
     {
-    case CV_CAP_PROP_FRAME_WIDTH:  return ((double) m_width);
-    case CV_CAP_PROP_FRAME_HEIGHT: return ((double) m_height);
-    case CV_CAP_PROP_FPS:          return m_framerate;
+    case cv::CAP_PROP_FRAME_WIDTH:  return ((double) m_width);
+    case cv::CAP_PROP_FRAME_HEIGHT: return ((double) m_height);
+    case cv::CAP_PROP_FPS:          return m_framerate;
     default:                       return 0.0;
     }
 }

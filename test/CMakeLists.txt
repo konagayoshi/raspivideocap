@@ -2,7 +2,9 @@ set( TARGET test_raspivideocap )
 
 cmake_minimum_required( VERSION 2.8 )
 
-find_package( OpenCV 3 REQUIRED )
+project(Project_Name)
+
+find_package( OpenCV 4 REQUIRED )
 
 include_directories( src /opt/raspivideocap/include )
 link_directories( /opt/raspivideocap/lib /opt/vc/lib )
